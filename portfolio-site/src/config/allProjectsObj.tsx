@@ -2,6 +2,7 @@ import strategy from "../assets/strategy.png";
 import { ProjectDetail } from "./allProjectDetaillObj";
 import wavvy from "../assets/wavvy.png";
 import movie from "../assets/movix.png";
+import tracker from '../assets/expenseTracker.png';
 export const ProjectsInfo=[
     {
         title:"Strategy Game",
@@ -10,7 +11,7 @@ export const ProjectsInfo=[
         tags:["Vanilla JS", "Canvas API"],
         img:strategy,
         demoLink:"https://portfolio-repo-one-sigma.vercel.app/",
-        sourceLink:"https://github.com/justKiduss/portfolio-repo/tree/main/Games/Strategy_Game",
+        sourceLink:"https://github.com/justKiduss/Strategy-Game",
         detailLink:`/projects/${ProjectDetail[0]?.id}`
     },
     {
@@ -20,7 +21,7 @@ export const ProjectsInfo=[
         tags:["React", "Socket.io", "Node.js", "Postgres"],
         img:wavvy,
         demoLink:"https://wavvy.kidus.codes",
-        sourceLink:"#",
+        sourceLink:"https://github.com/justKiduss/Wavvy",
         detailLink:`/projects/${ProjectDetail[1]?.id}`
     },
     {
@@ -30,8 +31,18 @@ export const ProjectsInfo=[
         tags:["React", "Node.js", "Postgres", "Tailwind"],
         img:movie,
         demoLink:"https://movix.kidus.codes",
-        sourceLink:"https://github.com/justKiduss/portfolio-repo/tree/main/chill-time",
+        sourceLink:"https://github.com/justKiduss/Movix",
         detailLink:`/projects/${ProjectDetail[2]?.id}`
+    },
+    {
+       title:"Expense Tracker",
+        featured:true,
+        desc:"Privacy-first expense tracker for Ethiopia. An Android app parses CBE and telebirr SMS on the phone and sends only structured fields to the backend.",
+        tags:["Next.js", "Kotlin", "Postgres", "Tailwind"],
+        img:tracker,
+        demoLink:"https://expense-tracker-ten-mauve-10.vercel.app",
+        sourceLink:"https://github.com/justKiduss/expense-tracker",
+        detailLink:`/projects/${ProjectDetail[3]?.id}` 
     }
 
 ] 
